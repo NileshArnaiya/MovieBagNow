@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">MovieBagNow</string>
+
+    <string name="vote">Vote :</string>
+    <string name="language">Language :</string>
+    <string name="overView">Overview</string>
+    <string name="production_companies">Production Companies</string>
+    <string name="cast">Cast</string>
+    <string name="review">Review</string>
+    <string name="similar_movie">Similar Movies</string>
+    <string name="release_date">Release Date :</string>
+    <string name="popularity">Popularity :</string>
+    <string name="release_status">Release Status :</string>
+    <string name="no_internet">No Internet/No data</string>
+    <string name="home">Home</string>
+
+</resources>

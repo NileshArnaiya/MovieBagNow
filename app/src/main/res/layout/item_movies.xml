@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="@dimen/dimen_5dp"
+    app:cardBackgroundColor="#F8F9FB"
+    app:cardCornerRadius="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <ImageView
+            android:id="@+id/iv_popular_movie"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_15sp"
+            android:fontFamily="@font/avenir_next_bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/iv_popular_movie"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/tv_vote_average"
+            app:layout_constraintVertical_chainStyle="spread"/>
+
+        <TextView
+            android:id="@+id/tv_vote_average"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:textSize="12sp"
+            android:fontFamily="@font/avenir_next_bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/iv_popular_movie"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            app:layout_constraintBottom_toTopOf="@id/tv_language"/>
+
+        <TextView
+            android:id="@+id/tv_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:textStyle="normal"
+            android:textSize="13sp"
+            android:fontFamily="@font/avenir_next_bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/iv_popular_movie"
+            app:layout_constraintTop_toBottomOf="@id/tv_vote_average"
+            app:layout_constraintBottom_toTopOf="@id/tv_release_date"/>
+
+        <TextView
+            android:id="@+id/tv_release_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dimen_5dp"
+            android:textStyle="italic"
+            android:textSize="13sp"
+            android:fontFamily="@font/avenir_next_bold"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@id/iv_popular_movie"
+            app:layout_constraintTop_toBottomOf="@id/tv_language"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

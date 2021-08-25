@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@android:id/background"
+        android:gravity="center_vertical|fill_horizontal"
+        android:left="@dimen/dimen_5dp"
+        android:right="@dimen/dimen_5dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="2dp" />
+            <size
+                android:width="@dimen/dimen_25dp"
+                android:height="@dimen/dimen_5dp" />
+            <solid android:color="#618CFF" />
+            <padding
+                android:left="@dimen/dimen_5dp"
+                android:right="@dimen/dimen_5dp" />
+        </shape>
+    </item>
+</layer-list>
